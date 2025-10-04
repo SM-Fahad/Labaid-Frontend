@@ -1,0 +1,265 @@
+ul#social li {
+    display: inline;
+}
+
+#topli {
+    font-size: 12px;
+    color: white;
+}
+
+#toprow {
+    background-color: #f8f9fa;
+}
+
+h5 {
+    color: #1e3b52;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.dropdown-item:hover {
+    background-color: #1e3b52;
+    color: white;
+    padding: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    transition: 0.3s ease;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0; /* Optional: remove the default spacing */
+}
+
+#submenu ul{
+    list-style: none;
+    padding: 0px;
+}
+
+#submenu.ul.show {
+    display: flex;
+}
+
+/* .dropdown-menu.show {
+    display: flex;
+} */
+
+
+.navbar .nav-link {
+  color: #1e3b52; /* default color */
+  transition: color 0.2s ease;
+}
+
+.navbar .nav-link:hover {
+  color: #ffffff; /* your desired hover color */
+}
+
+
+.carousel,
+  .carousel-item {
+    height: 400px; /* Set your desired height */
+  }
+
+  .carousel-item img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+  }
+
+  @font-face {
+    font-family: 'MyCustomFont';
+    src: url('MorganSansCond\ Lining\ Bold.ttf') format('woff'),
+         url('fonts/MyCustomFont.woff') format('woff');
+  }
+  
+  /* body {
+    font-family: 'MyCustomFont', sans-serif;
+  } */
+  
+
+  .white-transparent {
+    background-color: rgba(255, 255, 255, 0.7); /* 0.7 = 70% opacity */
+  }
+
+  #slidediv1, #slidediv2 {
+    background-color: rgba(255, 255, 255, 0.7); 
+    height: 150px; 
+    width: 380px; 
+    margin-left: 0%;
+    margin-right: 0%;
+    /* border: 2px solid #f8f9fa;  */
+    /* box-shadow: 10px; */
+  }
+
+  #slidediv{
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh; */
+
+    margin: 0 auto;
+    width: fit-content;
+
+    /* display: grid;
+    place-items: center;
+    height: 30vh; */
+  }
+
+  .hoverup {
+    font-size: 40px;
+    color: #1e3b52;
+    text-decoration: none;
+  }
+
+  .hoverup i {
+    display: inline-block;
+    transition: 0.2s ease;
+    }
+
+  .hoverup:hover i {
+    transform: translateY(-5px);
+  }
+
+  .lastdivh {
+    color: #1e3b52;
+  }
+
+  .lastdivp {
+    color: #302c2c;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: justify;
+    
+  }
+
+  .lastdiv {
+    border: 1px solid rgb(235, 230, 230);
+    box-shadow: 1px 1px 1px 1px white; 
+  }
+
+  .lastdiv a {
+    text-decoration: none;
+  }
+
+  .lastdiv img {
+    display: inline-block;
+    transition: 0.3s ease;
+  }
+
+  .lastdiv:hover img {
+    transform: translateY(-10px);
+  }
+
+
+  /* .slider-container {
+    position: absolute;
+    overflow: hidden;
+    float: inline-start;
+  } */
+
+  .slider-wrapper {
+    display: flex;
+    transition: scroll-behavior 0.3s;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+  }
+
+  .slider-wrapper::-webkit-scrollbar {
+    display: none;  
+  }
+
+  .slidepic {
+    flex: 0 0 auto;
+    width: 262px;
+    height: 450px;
+    margin-right: 1rem;
+  }
+
+  .btmnav {
+    height: 250px;
+    width: 262px;
+  }
+
+  .overlayicon {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #dcdee0;
+    font-size: 3rem;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    background-color: #1e3b52;  
+    height: 50px;
+    width: 50px; 
+  }
+
+  .btmnav:hover .overlayicon{
+    opacity: 1;
+  }
+
+  .btmnav::after{
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-radius: 8px;
+    z-index: 2;
+    height: 240px;
+    width: 250px;
+  }
+
+  .btmnav:hover::after{
+    opacity: 0.7; 
+  }
+
+  #btmcard {
+    text-decoration: none;
+  }
+
+  .card-text {
+    text-align: center;
+  }
+
+  .foot {
+    color: white;
+  }
+
+  /* Modal overlay */
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5);
+  }
+
+  /* Modal image */
+  .modal-content {
+    display: block;
+    margin: 3% auto;
+    max-width: 25%;
+    max-height: 850px;
+  }
+
+  /* Close button */
+  .close {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: rgb(0, 0, 0);
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .navbar {
+    /* position: fixed; */
+    z-index: 1000;
+  }
+  
